@@ -1,0 +1,7 @@
+/* :where(.css-dev-only-do-not-override-p7e5j5).ant-btn {
+  border-radius: 0px !important;
+} */
+
+:where(.css-dev-only-do-not-override-p7e5j5).ant-picker {
+  border-radius: 0px 6px 6px 0px !important;
+}

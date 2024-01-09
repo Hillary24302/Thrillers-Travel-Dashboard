@@ -1,0 +1,10 @@
+.fancy-icon {
+  display: inline-flex;
+  border-radius: 50%;
+  position: relative;
+}
+.verification-icon {
+  position: absolute;
+  bottom: 2px;
+  right: 0px;
+}
