@@ -60,8 +60,16 @@ const Transactions = () => {
           <Button
             onClick={handleSeeMoreClick}
             component="label"
-            className="fz-10 fw-400"
-            sx={{ color: '#EB5017', textTransform: 'none' }}
+            className="fz-10 fw-500"
+            sx={{
+              color: '#EB5017',
+              textTransform: 'none',
+              marginRight: '2px',
+              "& .MuiButton-endIcon": {
+                marginLeft: '2px',
+                marginBottom: '2px'
+              }
+            }}
             endIcon={<SvgRightArrow />}
           >
             See more

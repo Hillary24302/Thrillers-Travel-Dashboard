@@ -45,6 +45,7 @@ const TitleCard = ({ title }) => {
             title="Add Payroll"
             startIcon={<SvgAdd />}
             background="#3259DA"
+            color='#fff'
           />
         </Box>
       </Box>

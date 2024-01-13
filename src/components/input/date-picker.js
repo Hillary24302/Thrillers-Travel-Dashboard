@@ -1,12 +1,15 @@
 import React from 'react'
-import { DatePicker } from 'antd';
+import { DatePicker, Space } from 'antd';
+const { RangePicker } = DatePicker;
 
 
 const KDatePicker = () => {
 
   return (
     <div >
-       <DatePicker />
+       <RangePicker 
+       allowClear
+       />
     </div>
   );
 }

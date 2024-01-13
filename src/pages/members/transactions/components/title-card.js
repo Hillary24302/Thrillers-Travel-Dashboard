@@ -6,7 +6,7 @@ import GroupCard from "../../../../components/cards/group-card";
 
 
 const TitleCard = ({ title }) => {
-  const isSmallScreen = useMediaQuery("(max-width:750px)");
+  const isSmallScreen = useMediaQuery("(max-width:800px)");
 
   return (
     <Box

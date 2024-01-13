@@ -1,27 +1,26 @@
 import { Button } from "antd";
 import * as React from "react";
+import { SvgVerify } from "../svg-icon";
 
-const KButton = ({ background, border, startIcon, title, color }) => {
+const NoneVerify = () => {
   return (
     <Button
       component="label"
       variant="contained"
-      icon={startIcon}
       style={{
-        background: background,
-        border: border,
+        background: "#D0D5DD",
         textTransform: "none",
-        padding: "6px 26px",
-        color: color,
-        borderRadius: "6px",
+        color: "#fff",
+        border: "none",
+        borderRadius: "12px",
         justifyContent: "center",
         textAlign: "center",
         display: "flex", 
         alignItems: "center",
       }}
     >
-      {title}
+      None Verified
     </Button>
   );
 };
-export default KButton;
+export default NoneVerify;

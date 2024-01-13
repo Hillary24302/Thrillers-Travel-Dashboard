@@ -19,7 +19,7 @@ const WelcomeCard = () => {
     <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
     <Typography className=' fw-600 fz-24'  style={textGradientStyle}>Welcome, Eyam</Typography>
     <Box className='tprimary'>
-      <KButton background='#3259DA' border='#3259DA' startIcon={<SvgAdd />} title='Top Up'/>
+      <KButton background='#3259DA' border='#3259DA' startIcon={<SvgAdd />} title='Top Up' color='#fff'/>
     </Box>
 
   </Box>

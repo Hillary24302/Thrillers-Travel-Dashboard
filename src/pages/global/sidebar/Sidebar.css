@@ -19,6 +19,9 @@
               .ant-menu-title-content {
                   color: #fff;
               }
+              .ant-menu-item-icon {
+                stroke: #3259DA !important;
+              }
           }
       }
   }

@@ -7,6 +7,7 @@ import { ButtonBase, Stack } from "@mui/material";
 import { SvgEye, SvgStop } from "../../../../components/svg-icon";
 
 const BalanceCard = () => {
+  
   return (
     <Card sx={{ width: "100%", background: "#0C0B0B" }}>
       <CardContent sx={{ width: '100%', p: '16px 14px 0px 16px'}}>
@@ -21,8 +22,8 @@ const BalanceCard = () => {
         </Stack>
       </CardContent>
       <CardActions sx={{ width: '100%', p: '0px 20px 20px 20px', mt: '6px'}}>
-      <Stack direction="row" className="tw " justifyContent= 'space-between' spacing='2px'>
-          <Typography className="tw fw-400 fz-10" sx={{color: '#667185'}}>Payout Balance:</Typography>
+      <Stack direction="row" className="tw " justifyContent= 'space-between' textAlign='center' spacing='5px'>
+          <Typography className="tsecondary fw-400 fz-12" >Payout Balance:</Typography>
           <Typography className="tw fw-600 fz-12">$139,900.99</Typography>
           <ButtonBase>
             <SvgStop />
