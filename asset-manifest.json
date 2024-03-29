@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Hillary24302/Thrillers-Travel-Dashboard.git/static/css/main.81587a9f.css",
+    "main.js": "/Hillary24302/Thrillers-Travel-Dashboard.git/static/js/main.c902d0ed.js",
+    "static/js/787.dc618a94.chunk.js": "/Hillary24302/Thrillers-Travel-Dashboard.git/static/js/787.dc618a94.chunk.js",
+    "static/media/image.svg": "/Hillary24302/Thrillers-Travel-Dashboard.git/static/media/image.022750d8b45c7c2ade952709ac677c15.svg",
+    "index.html": "/Hillary24302/Thrillers-Travel-Dashboard.git/index.html",
+    "main.81587a9f.css.map": "/Hillary24302/Thrillers-Travel-Dashboard.git/static/css/main.81587a9f.css.map",
+    "main.c902d0ed.js.map": "/Hillary24302/Thrillers-Travel-Dashboard.git/static/js/main.c902d0ed.js.map",
+    "787.dc618a94.chunk.js.map": "/Hillary24302/Thrillers-Travel-Dashboard.git/static/js/787.dc618a94.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81587a9f.css",
+    "static/js/main.c902d0ed.js"
+  ]
+}
