@@ -4,11 +4,10 @@ export const authBaseUrl = '/';
 
 export const paths = {
   dashboard: memberBaseUrl ,
-  transactions: memberBaseUrl + 'transactions',
-  payroll: memberBaseUrl + 'payroll',
-  users: memberBaseUrl + 'users',
-  audit: memberBaseUrl + 'audit',
-  support: memberBaseUrl + 'support',
+  flights: memberBaseUrl + 'flights',
+  report: memberBaseUrl + 'report',
+  statistics: memberBaseUrl + 'statistics',
+  wallet: memberBaseUrl + 'wallet',
   settings: memberBaseUrl + 'settings',
   login: authBaseUrl + 'login',
 };

@@ -5,7 +5,6 @@ import DefaultRoute from "./default-route";
 
 const AppRoutes = () => {
   const isAuthenticated =  true;
-  console.log('web', WebRoutes);
   return (
     <BrowserRouter>
       <Routes>

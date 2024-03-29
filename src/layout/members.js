@@ -2,7 +2,6 @@ import { Layout } from "antd";
 import Sidebar from "../pages/global/sidebar/Sidebar";
 import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
-import Topbar from "../pages/global/topbar/Topbar";
 
 
 
@@ -30,7 +29,7 @@ const MemberLayout = ({ children }) => {
        <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
        <Layout
         style={{
-          background: '#f000',
+          background: '#E1ECEB',
           width: `${collapsed ? "calc(100% - 80px)" : "calc(100% - 280px)"}`,
           position: "absolute",
           height: "100vh",
@@ -41,7 +40,6 @@ const MemberLayout = ({ children }) => {
           top: 0,
         }}
       >
-    <Topbar />
         {/* <Breadcrumb />  */}
          <Box
           style={{

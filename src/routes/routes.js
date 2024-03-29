@@ -2,13 +2,12 @@ import { paths } from './paths';
 // import AuthLayout from '../layouts/auth';
 import MemberLayout from '../layout/members';
 import Dashboard from '../pages/members/dashboard/Dashboard';
-import Transactions from '../pages/members/transactions/Transactions';
-import PayRoll from '../pages/members/pay-roll/Pay-roll';
-import { SvgAudit, SvgDashboard, SvgPayroll, SvgSetting, SvgSupport, SvgTransactions, SvgUsers } from '../components/svg-icon';
-import Users from '../pages/members/users/Users';
-import AuditTrials from '../pages/members/audit/audit';
-import Support from '../pages/members/support/Support';
-import Settings from '../pages/members/settings/Settings';
+import { SvgAudit, SvgDashboard, SvgFlight, SvgPayroll, SvgReport, SvgSetting, SvgStat, SvgUsers, SvgWallet } from '../components/svg-icon';
+import FlightPage from '../pages/members/flights/Flights';
+import ReportPage from '../pages/members/report/Report';
+import StatisticsPage from '../pages/members/statistics/Statistic';
+import WalletPage from '../pages/members/wallet/Wallet';
+import SettingPage from '../pages/members/settings/Setting';
 
 export const membersRoute = [
   {
@@ -20,50 +19,42 @@ export const membersRoute = [
     icon: <SvgDashboard />
   },
   {
-    title: "Transactions",
-    path: paths.transactions,
+    title: "Flights",
+    path: paths.flights,
     layout: MemberLayout,
-    component: Transactions,
+    component: FlightPage,
     protected: true,
-    icon: <SvgTransactions />
+    icon: <SvgFlight />
   },
   {
-    title: "Payroll",
-    path: paths.payroll,
+    title: "Wallet",
+    path: paths.wallet,
     layout: MemberLayout,
-    component: PayRoll,
+    component: WalletPage,
     protected: true,
-    icon: <SvgPayroll />
+    icon: <SvgWallet />
   },
   {
-    title: "Users",
-    path: paths.users,
+    title: "Reports",
+    path: paths.report,
     layout: MemberLayout,
-    component: Users,
+    component: ReportPage,
     protected: true,
-    icon: <SvgUsers />
+    icon: <SvgReport />
   },
   {
-    title: "Audit Trials",
-    path: paths.audit,
+    title: "Statistics",
+    path: paths.statistics,
     layout: MemberLayout,
-    component: AuditTrials,
+    component: StatisticsPage,
     protected: true,
-    icon: <SvgAudit />
-  },
-  {
-    title: "Support",
-    path: paths.support,
-    layout: MemberLayout,
-    component: Support,
-    protected: true,
-    icon: <SvgSupport />
+    icon: <SvgStat />
   },
   {
     title: "Settings",
     path: paths.settings,
     layout: MemberLayout,
-    component: Settings,
+    component: SettingPage,
     protected: true,
     icon: <SvgSetting />
   }

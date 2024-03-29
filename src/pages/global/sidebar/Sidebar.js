@@ -1,15 +1,15 @@
-import { Layout, Menu } from "antd";
+import { Col, Layout, Menu, Row, Typography } from "antd";
 import React from "react";
 import Container from "../../../components/container/container";
 import { classnames } from "../../../utils/utils";
-import Logo from "../../../components/brand/logo";
-import { SvgCollapse, SvgDownload } from "../../../components/svg-icon";
+import { SvgCollapse } from "../../../components/svg-icon";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { getMainMenuItems } from "./MainManu";
-import SearchBar from "../../../components/searchbar/searchbar";
-import { FancyIcon } from "../../../components/fancy-icon/fancy-icon";
+import { FancyImage } from "../../../components/fancyImage/fancyImage";
 import profileImage from "../../../assets/images/image.svg";
+import Maplog from "../../../assets/images/maplog.jpg";
 import "./Sidebar.css";
+import { Avater } from "../../../components/fancyImage/avatar";
 
 const Sidebar = ({ className, collapsed, setCollapsed, ...rest }) => {
   const navigate = useNavigate();
@@ -18,7 +18,6 @@ const Sidebar = ({ className, collapsed, setCollapsed, ...rest }) => {
   const onMenuClicked = ({ key }) => {
     navigate(key);
   };
-  
 
   return (
     <Layout.Sider
@@ -36,26 +35,48 @@ const Sidebar = ({ className, collapsed, setCollapsed, ...rest }) => {
             <SvgCollapse collapsed={collapsed} />
           </Link>
         ) : (
-          <div className="mt--10 mb-10 lcontainer">
-            <Logo
-              iconColor="#fff"
-              textColor="#fff"
-              width="120px"
-              useIcon={!collapsed}
-            />
-            <Link to="#" onClick={() => setCollapsed(!collapsed)}>
-              <SvgCollapse collapsed={collapsed} />
-            </Link>
+          <div>
+            <Row style={{justifyContent: 'center', alignItems: 'center'}}>
+              <Col span={22}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <FancyImage
+                  width="64px"
+                  height="64px"
+                  border='2px solid #D6A217'
+                  padding='4px'
+                  image={<img src={profileImage} />}
+                />
+              </div>
+              </Col>
+              <Col span={2}>
+                <Link to="#" onClick={() => setCollapsed(!collapsed)}>
+                  <SvgCollapse collapsed={collapsed} />
+                </Link>
+              </Col>
+            </Row>
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: "10px",
+                  textAlign: "initial",
+                }}
+              >
+                <p className="bigFont">Ejike Hillary</p>
+                <p className="smallFont">hillaryejike24302@gmail.com</p>
+              </div>
+            </div>
           </div>
         )}
-        <div style={{ marginTop: "12px", marginRight: "-10px" }}>
-          <SearchBar
-            backgroundColor="#1D2739"
-            color="#F9FAFB"
-            border="#1D2739"
-            placeholder="Search"
-          />
-        </div>
         <div
           className="k-sidebar-main"
           style={{ marginTop: "15px", marginRight: "-15px" }}
@@ -73,39 +94,23 @@ const Sidebar = ({ className, collapsed, setCollapsed, ...rest }) => {
             onClick={onMenuClicked}
           />
         </div>
-        <div
-          style={{
-            marginTop: "20px",
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            background: "transparent",
-          }}
-        >
-          {collapsed ? (
-            <FancyIcon image={<img src={profileImage} />} verified={true} />
-          ) : (
-            <>
-              <FancyIcon
-                image={<img src={profileImage} />}
-                verified={true}
-                width="46px"
-                height="46px"
+        {!collapsed && (
+          <div style={{ marginTop: "10px" }}>
+            <Typography className="ttetiary fz-14 fw-400">
+              ACTIVE USERS
+            </Typography>
+            <div style={{ marginTop: "5px" }}>
+              <Avater />
+            </div>
+            <div style={{ marginLeft: "20px", marginTop: "5px" }}>
+              <FancyImage
+                width="80px"
+                height="80px"
+                image={<img src={Maplog} />}
               />
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  textAlign: "initial",
-                }}
-              >
-                <p className="bigFont">Ejike Hillary</p>
-                <p className="smallFont">@callphoneng.com</p>
-              </div>
-              <SvgDownload />
-            </>
-          )}
-        </div>
+            </div>
+          </div>
+        )}
       </Container>
     </Layout.Sider>
   );

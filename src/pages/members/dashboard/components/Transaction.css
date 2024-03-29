@@ -1,7 +1,0 @@
-
-:where(.css-dev-only-do-not-override-p7e5j5).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-p7e5j5).ant-table-wrapper .ant-table-thead >tr>td {
-  background: #E4E7EC !important;
-}
-:where(.css-dev-only-do-not-override-p7e5j5).ant-table-wrapper .ant-table-cell, :where(.css-dev-only-do-not-override-p7e5j5).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-p7e5j5).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-dev-only-do-not-override-p7e5j5).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-dev-only-do-not-override-p7e5j5).ant-table-wrapper tfoot>tr>th, :where(.css-dev-only-do-not-override-p7e5j5).ant-table-wrapper tfoot>tr>td {
-    padding: 12px 12px !important;
-}
